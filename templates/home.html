@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content"width=device-width, initial-scale=1.0">
+    <meta hhtp-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home page</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+    
+</head>
+<body style="background-color:powderblue;">
+    
+<a href="/uploadfiles">Поменять названия файло</a>
+<a href="/compareimages">Проверить есть ли одинаковые изображения</a>
+<a href="/downloadexcel">Скачать картинки по ссылкам в эксель файле</a>
+<!-- <a href="/compareimages">Check for duplicate images</a> -->
+
+    {% block body %}
+    {% endblock %}
+</body>
+</html>

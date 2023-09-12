@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content"width=device-width, initial-scale=1.0">
+    <meta hhtp-equiv="X-UA-Compatible" content="ie=edge">
+    <title>File Upload Example</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #song {
+		height: 150px;
+		width: 800px;
+		overflow: scroll; /* This is the key!! */
+		border: 1px #aabbcc solid;
+		padding: 10px;
+	}
+    </style>
+    
+</head>
+<body>
+<a href="/">Home</a>
+  <form  method="POST" action="#" >
+  <label for="fname">Characters to replace: </label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Replacement characters: </label>
+  <input name="lname" type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+<div id="Items">
+<div></div>
+    {% for picture in pictures %}
+        <div>{{picture.filename}}</div>
+    {% endfor %}
+</div>
+  <input name="downloadall" type="submit" value="Download">
+</form>
+</body>
+</html>
